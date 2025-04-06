@@ -198,7 +198,7 @@ void playBlackJack(struct BlackJackLobby* lobby) {
 
 	for (int i = 0; i < lobby->playerCount; i++)
 		hit(lobby->players[i], lobby->deck, &lobby->cardsLeft);
-	for (int i = 0; i < 312; i++)
+	for (int i = 0; i < cardCount; i++)
 		printf("Cards in deck: %s, %s, %s\n", lobby->deck->cards[i].value, lobby->deck->cards[i].suit, lobby->deck->cards[i].colour);
 
 	for (int i = 0; i < lobby->playerCount; i++) {
